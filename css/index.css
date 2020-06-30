@@ -1,11 +1,12 @@
-/**@font-face {
-	font-family: 'Alef-Regular';
-	src: url('Alef-Regular.ttf');
-}
-
+@font-face {
+  font-family: 'Alef-Regular';
+  src: url("../font/Alef-Regular.ttf"); }
 body {
-	font-family: 'Alef-Regular', serif;
-}**/
+  font-family: 'Alef-Regular', serif; }
+
+html, body {
+  margin: 0px; }
+
 .header {
   width: 100%;
   background: #579c87;
@@ -36,9 +37,9 @@ body {
     background: #579c87;
     color: #fdcb46;
     width: 35%;
-    height: 5%;
+    height: 15%;
     border-radius: 5px 5px 5px 5px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center; }
 
 .footer {

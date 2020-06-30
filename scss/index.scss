@@ -1,14 +1,18 @@
 $bg-color: rgb(87, 156, 135);
 $primary-color: rgb(253,203, 70);
 
-/**@font-face {
+@font-face {
 	font-family: 'Alef-Regular';
-	src: url('Alef-Regular.ttf');
+	src: url('../font/Alef-Regular.ttf');
 }
 
 body {
 	font-family: 'Alef-Regular', serif;
-}**/
+}
+
+html, body {
+	margin: 0px;
+}
 
 .header {
 	width: 100%;
@@ -46,9 +50,9 @@ body {
 		background: $bg-color;
 		color: $primary-color;
 		width: 35%;
-		height: 5%;
+		height: 15%;
 		border-radius: 5px 5px 5px 5px;
-		font-size: 1.5rem;
+		font-size: 2rem;
 		text-align: center;
 	}
 }
