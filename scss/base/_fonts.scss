@@ -1,0 +1,34 @@
+@font-face {
+	font-family: 'Alef-Regular';
+	src: url('../font/Alef-Regular.ttf');
+	font-family: 'Devonshire', cursive;
+	font-family: 'Croissant One', cursive;
+	font-family: 'Dancing Script', cursive;
+}
+
+body {
+	font-family: 'Alef-Regular', serif;
+}
+
+.menu__preview--note {
+	font-family: 'Devonshire', cursive;
+}
+
+.menu__preview--chic {
+	font-family: 'Croissant One', cursive;
+}
+
+.menu__preview--delice {
+	font-family: 'Dancing Script', cursive;
+}
+
+.menu__preview--palette {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.menu__preview--comics {
+	font-family: Comic Sans MS;
+}
+.menu__preview--arial {
+	font-family: Arial;
+}
