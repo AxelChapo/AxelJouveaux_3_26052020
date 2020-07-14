@@ -8,23 +8,28 @@ html, body {
 	margin: 0px;
 }
 
+a {
+	text-decoration: none;
+}
+
 .menu {
 	&__preview {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
 		height: 35%;
+		text-align: center;
 		&--item {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
 			width: 35%;
-			height: 100%;
+			height: 500px;
 			margin-top: 3%;
 			margin-bottom: 3%;
 			box-shadow: 1px 1px 12px gray;
-			font-size: 0.8rem;
+			font-size: 1.3rem;
 		}
 	}
 }

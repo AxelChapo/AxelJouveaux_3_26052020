@@ -3,14 +3,17 @@
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	height: 100px;
 	background: $bg-color;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	&__btn {
 		color: $primary-color;
+		width: 33%;
 		margin-left: 3%;
 		margin-right: 3%;
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 }
