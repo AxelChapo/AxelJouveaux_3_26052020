@@ -31,5 +31,10 @@ a {
 			box-shadow: 1px 1px 12px gray;
 			font-size: 1.3rem;
 		}
+		&--chic {
+				background: -webkit-linear-gradient(#E38A12, #8F5AFF);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+		}
 	}
 }

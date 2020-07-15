@@ -45,15 +45,17 @@ body {
   justify-content: center;
   align-items: center; }
   .header__logo {
-    width: 25%;
+    width: 100%;
     height: 50%; }
+    .header__logo--click {
+      width: 25%; }
 
 .footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 65px;
   background: #579c87;
   display: flex;
   flex-direction: row;
@@ -61,7 +63,6 @@ body {
   align-items: center; }
   .footer__btn {
     color: #fdcb46;
-    width: 33%;
     margin-left: 3%;
     margin-right: 3%;
     font-size: 1.5rem; }
@@ -89,5 +90,9 @@ a {
     margin-bottom: 3%;
     box-shadow: 1px 1px 12px gray;
     font-size: 1.3rem; }
+  .menu__preview--chic {
+    background: -webkit-linear-gradient(#E38A12, #8F5AFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
 
 /*# sourceMappingURL=index.css.map */
