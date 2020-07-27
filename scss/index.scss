@@ -3,9 +3,11 @@
 @import "./components/_btn.scss";
 @import "./layouts/_header.scss";
 @import "./layouts/_footer.scss";
+@import "./pages/_menu_1.scss";
 
 html, body {
 	margin: 0px;
+	padding-bottom: 70px;
 }
 
 a {
@@ -30,11 +32,38 @@ a {
 			margin-bottom: 3%;
 			box-shadow: 1px 1px 12px gray;
 			font-size: 1.3rem;
+			&--bg {
+				background: rgb(252, 223, 219);
+			}
+		}
+		&--note {
+			color: rgb(61, 19, 25);
+		}
+		&--comics {
+			color: rgb(61, 19, 25);
 		}
 		&--chic {
-				background: -webkit-linear-gradient(#E38A12, #8F5AFF);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
+			background: -webkit-linear-gradient(-0.20turn, #E38A12, #8F5AFF);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		&--arial {
+			color: rgb(199, 116, 18);
+		}
+		&--delice {
+			background: -webkit-linear-gradient(-0.20turn, #0229DD, #8F5AFF);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+		&--palette {
+			background: -webkit-linear-gradient(#3E923A, #BEFF7F);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 		}
 	}
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
 }

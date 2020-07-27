@@ -4,7 +4,7 @@
 body {
   font-family: 'Alef-Regular', serif; }
 
-.menu__preview--note {
+.menu__preview--note, .carte {
   font-family: 'Devonshire', cursive; }
 
 .menu__preview--chic {
@@ -67,8 +67,50 @@ body {
     margin-right: 3%;
     font-size: 1.5rem; }
 
+.title {
+  text-align: center; }
+
+.carte {
+  height: 90%;
+  width: 90%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fcdfdb;
+  color: #3d1319;
+  margin: 5%;
+  font-size: 1.5rem; }
+  .carte__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center; }
+  .carte__subtitle {
+    align-items: center;
+    display: flex;
+    text-align: center; }
+  .carte__subtitle::before, .carte__subtitle::after {
+    border-top: .0625em solid;
+    content: "";
+    flex: 1;
+    margin: 1em; }
+  .carte__part--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+
+i {
+  font-size: 3em;
+  background: -webkit-linear-gradient(-0.2turn, #E38A12, #8F5AFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px; }
+
 html, body {
-  margin: 0px; }
+  margin: 0px;
+  padding-bottom: 70px; }
 
 a {
   text-decoration: none; }
@@ -90,9 +132,29 @@ a {
     margin-bottom: 3%;
     box-shadow: 1px 1px 12px gray;
     font-size: 1.3rem; }
+    .menu__preview--item--bg {
+      background: #fcdfdb; }
+  .menu__preview--note {
+    color: #3d1319; }
+  .menu__preview--comics {
+    color: #3d1319; }
   .menu__preview--chic {
-    background: -webkit-linear-gradient(#E38A12, #8F5AFF);
+    background: -webkit-linear-gradient(-0.2turn, #E38A12, #8F5AFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
+  .menu__preview--arial {
+    color: #c77412; }
+  .menu__preview--delice {
+    background: -webkit-linear-gradient(-0.2turn, #0229DD, #8F5AFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .menu__preview--palette {
+    background: -webkit-linear-gradient(#3E923A, #BEFF7F);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+
+.main {
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=index.css.map */
