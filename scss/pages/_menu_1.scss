@@ -9,10 +9,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background: rgb(252, 223, 219);
-	color: rgb(61, 19, 25);
 	margin: 5%;
 	font-size: 1.5rem;
+	&__content {
+		width: 75%;
+	}
 	&__title {
 		display: flex;
 		flex-direction: column;
@@ -31,6 +32,9 @@
 		margin: 1em;
 	}
 	&__part {
+		p {
+			margin: 10px;
+		}
 		&--item {
 			display: flex;
 			flex-direction: row;
@@ -40,10 +44,39 @@
 	}
 }
 
+.note {
+	background: rgb(252, 223, 219);
+	color: rgb(61, 19, 25);
+}
+
+.chic {
+	background: rgb(255, 245, 254);
+	color: rgb(0, 0, 0);
+}
+
+.delice {
+	background: rgb(237, 239, 239);
+	color: rgb(0, 0, 0);
+}
+
+.palette {
+	background: rgb(253, 255, 253);
+	color: rgb(0, 0, 0);
+}
+
 i {
 	font-size: 3em;
-	background: -webkit-linear-gradient(-0.20turn, #E38A12, #8F5AFF);
+	background: -webkit-linear-gradient(-0.20turn, #EF475F, #F6916A);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin-top: 20px;
+}
+
+.bottom__title {
+	display: flex;
+	flex: row;
+	justify-content: space-around;
+	&--item {
+		margin-left: 10px;
+	}
 }

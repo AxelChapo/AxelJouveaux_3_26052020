@@ -4,16 +4,16 @@
 body {
   font-family: 'Alef-Regular', serif; }
 
-.menu__preview--note, .carte {
+.menu__preview--note, .note {
   font-family: 'Devonshire', cursive; }
 
-.menu__preview--chic {
+.menu__preview--chic, .chic {
   font-family: 'Croissant One', cursive; }
 
-.menu__preview--delice {
+.menu__preview--delice, .delice {
   font-family: 'Dancing Script', cursive; }
 
-.menu__preview--palette {
+.menu__preview--palette, .palette {
   font-family: 'Kaushan Script', cursive; }
 
 .menu__preview--comics {
@@ -77,10 +77,10 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #fcdfdb;
-  color: #3d1319;
   margin: 5%;
   font-size: 1.5rem; }
+  .carte__content {
+    width: 75%; }
   .carte__title {
     display: flex;
     flex-direction: column;
@@ -95,18 +95,46 @@ body {
     content: "";
     flex: 1;
     margin: 1em; }
+  .carte__part p {
+    margin: 10px; }
   .carte__part--item {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap; }
 
+.note {
+  background: #fcdfdb;
+  color: #3d1319; }
+
+.chic {
+  background: #fff5fe;
+  color: black; }
+
+.delice {
+  background: #edefef;
+  color: black; }
+
+.palette {
+  background: #fdfffd;
+  color: black; }
+
 i {
   font-size: 3em;
-  background: -webkit-linear-gradient(-0.2turn, #E38A12, #8F5AFF);
+  background: -webkit-linear-gradient(-0.2turn, #EF475F, #F6916A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 20px; }
+
+.bottom__title {
+  display: flex;
+  flex: row;
+  justify-content: space-around; }
+  .bottom__title--item {
+    margin-left: 10px; }
+
+.mention__content {
+  margin: 20px; }
 
 html, body {
   margin: 0px;
@@ -132,18 +160,27 @@ a {
     margin-bottom: 3%;
     box-shadow: 1px 1px 12px gray;
     font-size: 1.3rem; }
-    .menu__preview--item--bg {
+    .menu__preview--item.bg {
       background: #fcdfdb; }
   .menu__preview--note {
     color: #3d1319; }
-  .menu__preview--comics {
-    color: #3d1319; }
+  .menu__preview--comics.palette {
+    font-size: 2.5em;
+    color: #72bf56; }
+  .menu__preview--comics.delice {
+    font-size: 2.5em;
+    color: #0887fb;
+    background: transparent; }
+  .menu__preview--comics.note {
+    font-size: 2.5em;
+    color: #3c1218; }
   .menu__preview--chic {
     background: -webkit-linear-gradient(-0.2turn, #E38A12, #8F5AFF);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .menu__preview--arial {
-    color: #c77412; }
+    color: #c77412;
+    font-size: 2.5em; }
   .menu__preview--delice {
     background: -webkit-linear-gradient(-0.2turn, #0229DD, #8F5AFF);
     -webkit-background-clip: text;

@@ -4,6 +4,7 @@
 @import "./layouts/_header.scss";
 @import "./layouts/_footer.scss";
 @import "./pages/_menu_1.scss";
+@import "./pages/_mentions.scss";
 
 html, body {
 	margin: 0px;
@@ -32,15 +33,25 @@ a {
 			margin-bottom: 3%;
 			box-shadow: 1px 1px 12px gray;
 			font-size: 1.3rem;
-			&--bg {
+			&.bg {
 				background: rgb(252, 223, 219);
 			}
 		}
 		&--note {
 			color: rgb(61, 19, 25);
 		}
-		&--comics {
-			color: rgb(61, 19, 25);
+		&--comics.palette {
+			font-size: 2.5em;
+			color: rgb(114, 191, 86);		
+		}
+		&--comics.delice {
+			font-size: 2.5em;
+			color: rgb(8, 135, 251);
+			background: transparent;		
+		}
+		&--comics.note {
+			font-size: 2.5em;
+			color: rgb(60, 18, 24);		
 		}
 		&--chic {
 			background: -webkit-linear-gradient(-0.20turn, #E38A12, #8F5AFF);
@@ -49,6 +60,7 @@ a {
 		}
 		&--arial {
 			color: rgb(199, 116, 18);
+			font-size: 2.5em;
 		}
 		&--delice {
 			background: -webkit-linear-gradient(-0.20turn, #0229DD, #8F5AFF);
