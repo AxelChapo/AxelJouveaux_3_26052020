@@ -19,6 +19,12 @@
 		flex-direction: column;
 		justify-content: space-between;
 		text-align: center;
+		&--palette {
+			font-size: 3rem;
+			background: -webkit-linear-gradient(#3E923A, #BEFF7F);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
 	}
 	&__subtitle {
 		align-items: center;
@@ -34,6 +40,15 @@
 	&__part {
 		p {
 			margin: 10px;
+		}
+		&--orange {
+			color: rgb(198, 116, 18);
+		}
+		&--purple {
+			color: rgb(165, 103, 153);
+		}
+		&--deeppurple {
+			color: rgb(110, 76, 204);
 		}
 		&--item {
 			display: flex;
@@ -78,5 +93,43 @@ i {
 	justify-content: space-around;
 	&--item {
 		margin-left: 10px;
+	}
+}
+
+h3 {
+	&.orange {
+		color: rgb(198, 116, 18);
+	}
+	&.purple {
+		color: rgb(165, 103, 153);
+	}
+	&.deeppurple {
+		color: rgb(110, 76, 204);
+	}
+	&.darkblue::before, &.darkblue::after {
+		border-color: rgb(2, 40, 221);
+	}
+	&.blue::before, &.blue::after {
+		border-color: rgb(6, 112, 243);
+	}
+	&.lightblue::before, &.lightblue::after {
+		border-color: rgb(34, 157, 249);
+	}
+	&.green::before, &.green::after {
+		border-color: rgb(65, 150, 60);
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.carte {
+		&__part {
+			&--item {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+		}
 	}
 }

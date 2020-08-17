@@ -15,6 +15,11 @@ a {
 	text-decoration: none;
 }
 
+.main {
+	display: flex;
+	flex-direction: column;
+}
+
 .menu {
 	&__preview {
 		display: flex;
@@ -38,7 +43,7 @@ a {
 			}
 		}
 		&--note {
-			color: rgb(61, 19, 25);
+			color: rgb(60, 18, 24);
 		}
 		&--comics.palette {
 			font-size: 2.5em;
@@ -75,7 +80,18 @@ a {
 	}
 }
 
-.main {
-	display: flex;
-	flex-direction: column;
+@media screen and (max-width: 1000px) {
+	.menu {
+		width: 100%;
+		justify-content: center;
+		&__preview {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			&--item {
+				width: 80%;
+			}
+		}
+	}
 }

@@ -16,3 +16,11 @@
 		font-size: 1.5rem;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+}
