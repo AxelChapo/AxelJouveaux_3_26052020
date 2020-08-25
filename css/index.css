@@ -100,6 +100,8 @@ body {
     align-items: center;
     display: flex;
     text-align: center; }
+    .carte__subtitle:hover + .underline {
+      transform: scaleX(1); }
   .carte__subtitle::before, .carte__subtitle::after {
     border-top: .0625em solid;
     content: "";
@@ -118,6 +120,10 @@ body {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap; }
+
+.underline {
+  background: black;
+  height: 2px; }
 
 .note {
   background: #fcdfdb;
@@ -204,6 +210,10 @@ a {
     font-size: 1.3rem; }
     .menu__preview--item.bg {
       background: #fcdfdb; }
+  .menu__preview--itemZoom {
+    transition: transform 450ms; }
+    .menu__preview--itemZoom:hover {
+      transform: scale(1.3); }
   .menu__preview--note {
     color: #3c1218; }
   .menu__preview--comics.palette {
