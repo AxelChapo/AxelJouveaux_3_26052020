@@ -30,11 +30,6 @@
 		align-items: center;
 		display: flex;
 		text-align: center;
-		&:hover {
-			& + .underline {
-				transform: scaleX(1);
-			}
-		}
 	}
 	&__subtitle::before,&__subtitle::after {
 		border-top: .0625em solid;
@@ -65,11 +60,10 @@
 }
 
 .underline {
-	background: black;
-	height: 2px;
-	//transform-origin: left;
-	//transform: scaleX(0);
-	//transition: transform 300ms;			
+	transition: border-bottom 250ms ease-in-out;
+	&:hover {
+		border-bottom: 2px solid black;
+	}
 }
 
 .note {

@@ -100,8 +100,6 @@ body {
     align-items: center;
     display: flex;
     text-align: center; }
-    .carte__subtitle:hover + .underline {
-      transform: scaleX(1); }
   .carte__subtitle::before, .carte__subtitle::after {
     border-top: .0625em solid;
     content: "";
@@ -122,8 +120,9 @@ body {
     flex-wrap: nowrap; }
 
 .underline {
-  background: black;
-  height: 2px; }
+  transition: border-bottom 250ms ease-in-out; }
+  .underline:hover {
+    border-bottom: 2px solid black; }
 
 .note {
   background: #fcdfdb;
