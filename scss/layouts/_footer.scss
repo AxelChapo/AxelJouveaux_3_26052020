@@ -1,3 +1,15 @@
+@keyframes shake {
+	10%, 90% {
+		transform: skewY(-2deg);
+	}
+	20%, 40%, 60%, 80% {
+		transform: skewY(4deg);
+	}
+	30%, 50%, 70% {
+		transform: skewY(-4deg);
+	}
+}
+
 .footer {
 	position: fixed;
 	left: 0;
@@ -14,6 +26,10 @@
 		margin-left: 3%;
 		margin-right: 3%;
 		font-size: 1.5rem;
+		&:hover {
+			animation: shake 1s cubic-bezier(0,.77,1,.35) infinite both;
+			transform: skewY(0deg);
+		}
 	}
 }
 
