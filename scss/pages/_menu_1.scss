@@ -60,7 +60,7 @@
 }
 
 .underline {
-	transition: border-bottom 250ms ease-in-out;
+	transition: border-bottom 300ms cubic-bezier(0,0,1,1);
 	&:hover {
 		border-bottom: 2px solid black;
 	}
@@ -96,7 +96,7 @@ i {
 
 .bottom__title {
 	display: flex;
-	flex: row;
+	flex-direction: row;
 	justify-content: space-around;
 	&--item {
 		margin-left: 10px;
