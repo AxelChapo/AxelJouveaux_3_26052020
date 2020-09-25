@@ -2,15 +2,26 @@
 	text-align: center;
 }
 
-.carte {
-	height: 90%;
-	width: 90%;
-	align-items: center;
+.body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
+}
+
+.carte {
+	max-width: 1150px;
+	min-height: 1350px;
+	height: 90%;
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin: 5%;
 	font-size: 1.5rem;
+	padding: 0;
+	box-shadow: 1px 1px 12px gray;
 	&__content {
 		width: 75%;
 	}
@@ -79,6 +90,7 @@
 .note {
 	background: rgb(252, 223, 219);
 	color: rgb(61, 19, 25);
+	font-size: 2em;
 }
 
 .chic {
@@ -89,11 +101,13 @@
 .delice {
 	background: rgb(237, 239, 239);
 	color: rgb(0, 0, 0);
+	font-size: 2em;
 }
 
 .palette {
 	background: rgb(253, 255, 253);
 	color: rgb(0, 0, 0);
+	font-size: 2em;
 }
 
 i {

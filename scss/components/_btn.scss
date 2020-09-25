@@ -16,14 +16,18 @@
 	flex-direction: row;
 	justify-content: center;
 	&--soon {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 		background: $bg-color;
 		color: $primary-color;
 		font-size: 1em;
-		overflow-wrap: break-word;
+		min-width: 280px;
 		width: 20%;
-		height: 15%;
+		height: 75px;
 		border-radius: 5px 5px 5px 5px;
-		font-size: 1.7rem;
+		font-size: 2rem;
 		text-align: center;
 		& span {
 			animation-name: blink;
