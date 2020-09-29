@@ -111,3 +111,37 @@
 		}
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.menu {
+		&__preview {
+			&--baskerville {
+				font-size: 1em;
+			}
+			&--kalam {
+				font-size: 1.5em;
+			}
+			&--note {
+				font-size: 2em;
+			}
+			&--caveat.palette {
+				font-size: 1.5em;		
+			}
+			&--caveat.delice {
+				font-size: 1.5em;		
+			}
+			&--caveat.note {
+				font-size: 1.5em;		
+			}
+			&--palette {
+				font-size: 1.5em;
+			}
+			&--delice {
+				font-size: 1.5em;
+			}
+			&--chic {
+				font-size: 1.5em;
+			}
+		}
+	}
+}
